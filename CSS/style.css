@@ -1,0 +1,35 @@
+/* #选择ID */
+/* .选择类别 */
+* {
+  text-align: center;
+  color: blue;
+}
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+#param1 {
+  color: rgb(153, 89, 125);
+  border: 5px solid tomato;
+}
+.CenterBlue {
+  text-align: center;
+  color: hsl(15, 34%, 45%);
+}
+h2.CenterBlue {
+  background-color: blueviolet;
+}
+p.large {
+  font-size: 300%;
+}
+p.CenterBlue {
+  text-align: center;
+  color: red;
+}

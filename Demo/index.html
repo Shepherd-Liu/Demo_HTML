@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>网站标题</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- menu -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="index.htmls">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>hello world</h1>
+
+      <h2>
+        online manual:
+        <a href="https://www.w3schools.com/">w3schools</a>
+      </h2>
+
+      <p>你好世界</p>
+
+      <p>
+        3 Elements of web:<br />
+        <a href="https://www.w3schools.com/html/default.asp">HTML</a>|
+        <a href="https://www.w3schools.com/css/default.asp">CSS</a>|
+        <a href="https://www.w3schools.com/js/default.asp">JavaScript</a>|
+      </p>
+
+      <p>Current Time : <span id="time"></span></p>
+
+      <hr />
+
+      <p>
+        Change Backroung Color :
+        <button onclick="pink()">pink</button>
+        <button onclick="yello()">yello</button>
+        <button onclick="black()">black</button>
+        <button onclick="white()">white</button>
+        <!--<button onclick="reset()">reset</button>-->
+      </p>
+
+      <p>
+        let's learn :
+        <button onmouseover="showhtml()" onmouseout="hide()">HTML5</button>
+        <button onmouseover="showcss()" onmouseout="hide()">CSS</button>
+        <button onmouseover="showjs()" onmouseout="hide()">JavaScript</button>
+      </p>
+
+      <hr />
+
+      <div>
+        <img id="fig" height="200px" />
+        <p id="desc"></p>
+      </div>
+
+      <p>
+        <script src="main.js"></script>
+      </p>
+    </div>
+  </body>
+</html>

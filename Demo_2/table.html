@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #991d1d; /* 表格颜色 */
+        text-align: left; /* 对齐方向 */
+        padding: 8px; /* 行间距 */
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>table</h1>
+    <!-- 以下是表格 -->
+    <table>
+      <tr>
+        <!-- 标题栏 -->
+        <th colspan="2">Company</th>
+        <th>Contact</th>
+        <!-- <th>Contry</th> -->
+      </tr>
+      <tr>
+        <!-- 第一行 -->
+        <td rowspan="2">Alibaba</td>
+        <td>MS.poonga</td>
+        <td>China</td>
+      </tr>
+      <tr>
+        <!-- 第二行 -->
+        <!-- <td>Baidu</td> -->
+        <td>MS.Li</td>
+        <td>China</td>
+      </tr>
+      <tr>
+        <!-- 第三行 -->
+        <td>Joongbu</td>
+        <td>Lee</td>
+        <td>Korea</td>
+      </tr>
+    </table>
+    <!-- 以上是表格 -->
+  </body>
+</html>

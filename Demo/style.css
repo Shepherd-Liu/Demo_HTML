@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* 全局样式 */
+  font-size: 20px; /*文字尺寸*/
+  color: blue; /*文字颜色*/
+  background-color: linen; /*背景颜色*/
+  line-height: 2; /*行间距*/
+  /* text-align: center; /*居中文本*/
+}
+
+button {
+  /* 按钮样式 */
+  padding: 2px 10px;
+  margin: 6px 10px;
+  font-size: large;
+  font-weight: bolder;
+  background-color: aquamarine;
+  border-radius: 10px;
+  border-width: 3px;
+}
+
+button:hover {
+  /* 鼠标悬浮于按钮上，按钮样式 */
+  color: chartreuse; /*颜色*/
+  background-color: blueviolet; /* 背景色 */
+}
+
+/*span {-----//变更所有span
+  color: darkorchid;
+  background-color: aqua;
+}*/
+
+#time {
+  color: brown;
+  background-color: blue;
+}
+
+ul {
+  list-style-type: square;
+}
+
+.navbar {
+  /*导航栏设置*/
+  background-color: black;
+  color: white;
+  height: 100px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul li {
+  margin-left: 50px; /*间隔*/
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold; /*字体粗细度*/
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  /*选中当鼠标指针悬停在导航栏 (.navbar) 内的任何链接 (a) 上时，该链接元素。hover即鼠标悬停状态*/
+  color: blueviolet;
+  border-bottom: 2px #fff solid;
+}
