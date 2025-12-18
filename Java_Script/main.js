@@ -9,7 +9,9 @@ let z = x + y;
 console.log(z);
 console.log(x + '+' + y + '=' + z);
 /* --------------------------------- keyword -------------------------------- */
-let x;
-x = 5;
-let y = 6;
-console.log(y);
+const name11 = 'bclee';
+console.log(name11);
+const name11 = 'wewe';
+console.log(name11);
+
+const x_y_z$ = '111';
