@@ -1,0 +1,29 @@
+/* rip.css */
+
+/* 特点列表样式 */
+.features-list {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+}
+
+/* 图片占位符 */
+.img-placeholder {
+  background-color: #eee;
+  border: 2px dashed #ccc;
+  color: #888;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* 强调文字颜色 */
+strong {
+  color: #e67e22;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSPF 协议详解 - Route Lab</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ------------------------------- navbar -------------------------------- -->
+    <nav class="navbar">
+      <div class="logo">Routing Protocols Study</div>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="rip.html">RIP</a></li>
+        <li><a href="ospf.html" style="color: #3498db">OSPF</a></li>
+        <li><a href="isis.html">IS-IS</a></li>
+      </ul>
+    </nav>
+    <!-- -------------------------------- body --------------------------------- -->
+    <div class="container">
+      <section class="card">
+        <h1>OSPF (开放最短路径优先)</h1>
+        <p>
+          OSPF 是一种基于<strong>链路状态 (Link-State)</strong>
+          算法的内部网关协议 (IGP)。它不像 RIP
+          那样通过“洪泛”更新，而是通过同步整个网络的地图来计算路径。
+        </p>
+        <p>
+          ---OSPF는 <strong>링크 상태(Link-State)</strong> 알고리즘을 기반으로
+          하는 내부 게이트웨이 프로토콜(IGP)입니다. 그것은 RIP처럼 '소문'으로
+          업데이트되는 것이 아니라 전체 네트워크의 지도를 동기화하여 경로를
+          계산합니다.
+        </p>
+      </section>
+      <!-- -------------------------------- card --------------------------------- -->
+      <section class="card">
+        <h3>OSPF 区域 (Area) 概念</h3>
+        <h4>OSPF 영역 (Area) 개념</h4>
+        <p>
+          为了支持大规模网络，OSPF
+          引入了区域设计的概念。所有非骨干区域必须与骨干区域相连。
+        </p>
+        <br />
+        <p>
+          대규모 네트워크를 지원하기 위해 OSPF 지역 디자인의 개념을
+          도입했습니다. 모든 비골격 영역은 골격 영역과 연결되어야 합니다.
+        </p>
+        <div class="image-box" style="text-align: center; margin-top: 20px">
+          <img
+            src="https://via.placeholder.com/800x400?text=OSPF+Area+Design"
+            alt="OSPF 区域设计"
+            style="max-width: 100%; height: auto"
+          />
+          <p style="font-style: italic; color: #666">
+            骨干区域 (Area 0) 是所有流量的中转站
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>OSPF 的三大组件</h3>
+        <h4>OSPF의 3대 구성 요소</h4>
+        <ul style="margin-left: 20px">
+          <li><strong>Hello 报文：</strong>用于发现并建立邻居关系。</li>
+          <li>Hello 메시지: 이웃 관계를 발견하고 구축하는 데 사용됩니다.</li>
+          <li>
+            <strong>LSDB (链路状态数据库)：</strong
+            >存储全网的拓扑信息，“全地图”。
+          </li>
+          <li>
+            LSDB (링크 상태 데이터베이스) 전체 네트워크의 토폴로지 정보, '전체
+            지도'를 저장합니다.
+          </li>
+          <li>
+            <strong>SPF 算法 (Dijkstra)：</strong
+            >以自己为根，计算出到达目的地的最短路径。
+          </li>
+          <li>
+            SPF 알고리즘(Dijkstra)은 자신을 기반으로 목적지까지의 최단 경로를
+            계산합니다.。
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
