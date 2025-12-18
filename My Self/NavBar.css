@@ -1,0 +1,44 @@
+/* ----------------------------------- 导航栏 ---------------------------------- */
+.navbar {
+  background-color: #2c3e50;
+  height: 60px;
+  display: flex; /* 开启弹性布局，让里面的元素排成一排 */
+  justify-content: space-between; /* 左右对齐，中间留空 */
+  align-items: center; /* 垂直居中 */
+  padding: 0 50px; /* 两边留点空隙 */
+  width: 100%;
+}
+
+/* --------------------------------- LOGO样式 --------------------------------- */
+#logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* ---------------------------------- 菜单栏样式 --------------------------------- */
+.nav-links {
+  display: flex;
+  list-style: none; /* 去掉列表的小圆点 */
+}
+.nav-links li {
+  margin: 0 20px;
+  margin-left: auto; /* 这一行就像是给左侧加了一个弹簧，把菜单整体往右侧推 */
+  margin-right: 50px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none; /* 去掉下划线 */
+}
+.nav-links a:hover {
+  color: #3498db;
+}
+/* ---------------------------------- 登录按钮 ---------------------------------- */
+.login-btn {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
