@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IS-IS 协议详解 - Route Lab</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Routing Protocols Study</div>
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="rip.html">RIP</a></li>
+        <li><a href="ospf.html">OSPF</a></li>
+        <li><a href="isis.html" style="color: #3498db">IS-IS</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <section class="card">
+        <h1>IS-IS (Intermediate System to Intermediate System)</h1>
+        <p>
+          IS-IS 是一种链路状态路由协议，最初是为 OSI
+          模型设计的。由于它直接运行在数据链路层上，且具有极强的扩展性（TLV
+          结构），现在已成为大规模运营商网络的首选。
+        </p>
+        <br />
+        <p>
+          IS-IS는 원래 OSI 모델을 위해 설계된 링크 상태 라우팅 프로토콜입니다.
+          데이터 링크 계층에서 직접 작동하고 확장성(TLV 구조)이 강하기 때문에
+          이제 대규모 통신사 네트워크의 첫 번째 선택이 되었습니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <h3>IS-IS 的层级结构(계층 구조)</h3>
+        <p>
+          与 OSPF 基于“区域”的划分不同，IS-IS
+          是基于“路由器等级”的。它的逻辑边界位于链路上，而不是路由器上。
+        </p>
+        <p>
+          OSPF가 '지역'을 기반으로 구분하는 것과 달리 IS-IS는 '라우터 수준'을
+          기반으로 합니다. 그것의 논리적 경계는 라우터가 아닌 링크에 있습니다.
+        </p>
+
+        <ul style="margin: 15px 0 15px 20px">
+          <li>
+            <strong>Level-1 (L1)：</strong> 负责区域内的路由。지역 내 경로를
+            담당합니다.
+          </li>
+          <li>
+            <strong>Level-2 (L2)：</strong> 负责区域间的路由（骨干网）。지역 간
+            라우팅(백본망)을 담당합니다.
+          </li>
+          <li>
+            <strong>Level-1-2 (L1/2)：</strong> 类似 OSPF 的 ABR，连接 L1 和
+            L2。OSPF와 유사한 ABR, L1 및 L2를 연결합니다.
+          </li>
+        </ul>
+
+        <div class="image-box" style="text-align: center">
+          <p style="font-style: italic; color: #666; margin-top: 10px">
+            IS-IS 的骨干网是由所有 L2 和 L1/2 路由器组成的连续集合
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>为什么选择 IS-IS？</h3>
+        <p>
+          IS-IS 使用
+          <strong>TLV (Type-Length-Value)</strong>
+          架构。这意味着如果要支持新的功能（比如 IPv6），只需增加一个新的 TLV
+          即可，而不需要重新设计协议。这让它在支持双栈网络（IPv4+IPv6）时非常从容。
+        </p>
+        <p>
+          IS-IS는<strong>TLV(Type-Length-Value)</strong>아키텍처를 사용합니다.
+          이는 IPv6와 같은 새로운 기능을 지원하려면 프로토콜을 다시 설계하지
+          않고 새로운 TLV만 추가하면 된다는 것을 의미합니다. 이로 인해 이중 스택
+          네트워크(IPv4+IPv6)를 지원할 때 매우 여유롭습니다.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
