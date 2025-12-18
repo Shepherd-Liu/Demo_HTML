@@ -1,6 +1,6 @@
 /* -------------------------------- showtime -------------------------------- */
 function showtime() {
-  "document.getElementById('demo').innerHTML = Date()";
+  document.getElementById('demo').innerHTML = Date();
 }
 /* ------------------------------- console.log ------------------------------ */
 let x = 7;
