@@ -1,0 +1,31 @@
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.lteam {
+  font-size: 100px;
+  background-color: blue;
+  color: white;
+}
+.rteam {
+  font-size: 100px;
+  background-color: red;
+  color: white;
+}
+.lsetscore {
+  background-color: paleturquoise;
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+}
+.rsetscore {
+  background-color: rgb(129, 19, 52);
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+}
