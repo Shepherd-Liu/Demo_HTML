@@ -1,27 +1,27 @@
-/* 1. 基础重置 */
+/* ---------------------------------- 基础设置 ---------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* ---------------------------------- 主题设置 ---------------------------------- */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: antiquewhite;
   color: #333;
   line-height: 1.6;
 }
-/* 3. 内容区域 */
+/* ---------------------------------- 内部容器 ---------------------------------- */
 .container {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px; /* 设置元素的上外边距 */
+  margin-bottom: 30px; /* 设置元素的下外边距 */
 
-  /* 关键：设置与导航栏一致的百分比 */
-  margin-left: 10%;
-  margin-right: 15%;
-  padding: 0 20px;
+  /*导航栏一致的百分比 */
+  margin-left: 10%; /* 左外边距 */
+  margin-right: 15%; /* 右外边距 */
+  padding: 0 20px; /* 内边距 */
 }
-
+/* ----------------------------------- 卡片 ----------------------------------- */
 .card {
   background: white;
   padding: 30px;
@@ -36,11 +36,10 @@ body {
   border-left: 5px solid #3498db;
   padding-left: 15px;
 }
-
-/* 4. 页脚 */
-footer {
+/* ----------------------------------- 页脚 ----------------------------------- */
+/* footer {
   text-align: center;
   padding: 40px 0;
   color: #7f8c8d;
   font-size: 0.9rem;
-}
+} */
